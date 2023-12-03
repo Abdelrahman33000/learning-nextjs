@@ -1,0 +1,79 @@
+ .Hero{
+background: #491A85;  
+display: flex; 
+align-items: center;
+height: 100vh;
+
+}  
+.hero-image{
+  width: 90%;
+}
+
+.Hero .row{
+   margin-bottom: 40px; 
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .Hero{
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .content{
+       flex: 1;
+    }
+
+    .hero-image{
+        width: 100%;
+    }
+
+  }
+
+.input-email-data {
+    width: 300px;
+    background-color: transparent;
+    color: white;
+    /* border: 0.5px solid white; */
+}
+
+
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: white;
+  }
+  *:-moz-placeholder {
+    /* FF 4-18 */
+    color: white;
+    opacity: 1;
+  }
+  *::-moz-placeholder {
+    /* FF 19+ */
+    color: white;
+    opacity: 1;
+  }
+  *:-ms-input-placeholder {
+    /* IE 10+ */
+    color: white;
+  }
+  *::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+  }
+  *::placeholder {
+    /* modern browser */
+    color: white;
+  }
+  
+  .hero-text{
+    font-weight: 200;
+    text-align: justify;
+    text-justify: inter-word;
+    
+  }
